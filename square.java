@@ -2,8 +2,8 @@ package magicsquare;
 
 public class square {
 	public static void main (String[] args){
-		long limit = (long) (9.2 * Math.pow(10, 18));
-		long a, b, c, d, e, f, g, h, i, z, sum, a2, b2, c2, d2, e2, f2, g2, h2, i2;
+		long limit = (long) (9.223372036854775807 * Math.pow(10, 18));
+		long a, b, c, d, e, f, g, h, i, sum, a2, b2, c2, d2, e2, f2, g2, h2, i2;
 		for (a = 0; a<limit; a++){
 			for (b = 0; b<limit;b++){
 				for (c=0;c<limit;c++){
