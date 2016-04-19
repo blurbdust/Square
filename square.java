@@ -23,7 +23,7 @@ public class square {
 											h2 = (long) (Math.pow(h, 2));
 											i2 = (long) (Math.pow(i, 2));
 											sum = a2 + b2 + c2;
-											if ((d2 + e2 + f2) == sum && 
+											if ((!checkEquals(a2,b2,c2,d2,e2,f2,g2,h2,i2)) && (d2 + e2 + f2) == sum && 
 													(g2 + h2 + i2) == sum && 
 															(a2 + d2 + g2) == sum &&
 																	(b2 + e2 + h2) == sum && 
@@ -49,5 +49,21 @@ public class square {
 		
 		//outside for loops
 		
+	}
+	public static boolean checkEquals(long a2, long b2, long c2, long d2, long e2, long f2, long g2, long h2, long i2){
+		if (((a2 == b2) || (a2 == c2) || (a2 == d2) || (a2 == e2) || (f2 == g2) || (a2 == h2) || (a2 == i2)) &&
+				(b2 == c2) || (b2 == d2) || (b2 == e2) || (b2 == f2) || (b2 == g2) || (b2 == h2) || (b2 == i2) &&
+					(c2 == d2) || (c2 == e2) || (c2 == f2) || (c2 == g2) || (c2 == h2) || (c2 == i2) &&
+						(d2 == e2) || (d2 == f2) || (d2 == g2) || (d2 == h2) || (d2 == i2) &&
+							(e2 == f2) || (e2 == g2) || (e2 == h2) || (e2 == i2) &&
+								(f2 == g2) || (f2 == h2) || (f2 == i2) &&
+									(g2 == h2) || (g2 == i2) &&
+										(h2 == i2)){
+											return true;
+		}
+		else {
+			//wow really?
+			return false;
+		}
 	}
 }
