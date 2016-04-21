@@ -17,9 +17,10 @@ bool CheckEquals(long a2, long b2, long c2, long d2, long e2, long f2, long g2, 
 			//wow really?
 			return false;
 		}
-
+}
 void main(){
 		long limit = (long) (9.223372036854775807 * pow(10, 18));
+		//long limit = 100;
 		long a, b, c, d, e, f, g, h, i, sum, a2, b2, c2, d2, e2, f2, g2, h2, i2;
 		for (a=0; a<limit; a++){
 			for (b=0; b<limit;b++){
@@ -47,12 +48,12 @@ void main(){
 																		(c2 + f2 + i2) == sum &&
 																			(a2 + e2 + i2) == sum &&
 																				(g2 + e2 + c2) == sum){
-																					printf("Winner: lf, %f, %f, %f, %f, %f, %f, %f, %f\n", a,b,c,d,e,f,g,h,i);
+																					printf("Winner: %f, %f, %f, %f, %f, %f, %f, %f, %f\n", a,b,c,d,e,f,g,h,i);
 																					break;
 																					
 											}
 											else {
-												printf("%f, %f, %f, %f, %f, %f, %f, %f, %f\n", a,b,c,d,e,f,g,h,i);
+												printf("%d, %d, %d, %d, %d, %d, %d, %d, %d\n", a,b,c,d,e,f,g,h,i);
 											}
 										}
 									}
@@ -66,6 +67,4 @@ void main(){
 		
 		//outside for loops
 		
-	}
-	
 	}
